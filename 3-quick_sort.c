@@ -81,7 +81,7 @@ void quick_sort(int *array, size_t size)
 {
 	int end_index;
 
-	if ((array) && (size > 2))
+	if ((array) && (size >= 2))
 	{
 		end_index = size - 1;
 		quicksort_recursion(array, 0, end_index, size);
